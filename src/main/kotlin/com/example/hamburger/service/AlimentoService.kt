@@ -1,8 +1,8 @@
-package com.example.hamburgueria.service
+package com.example.hamburger.service
 
-import com.example.hamburgueria.controller.dto.AlimentoDto
-import com.example.hamburgueria.domain.Alimento
-import com.example.hamburgueria.repository.AlimentoRepository
+import com.example.hamburger.controller.dto.AlimentoDto
+import com.example.hamburger.domain.Alimento
+import com.example.hamburger.repository.AlimentoRepository
 import org.springframework.stereotype.Service
 
 @Service

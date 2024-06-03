@@ -1,4 +1,4 @@
-package com.example.hamburgueria.domain
+package com.example.hamburger.domain
 
 import java.math.BigDecimal
 

@@ -1,4 +1,4 @@
-package com.example.hamburgueria
+package com.example.hamburger
 
 import 	org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

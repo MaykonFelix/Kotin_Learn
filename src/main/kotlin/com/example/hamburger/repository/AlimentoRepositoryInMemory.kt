@@ -1,7 +1,7 @@
-package com.example.hamburgueria.repository
+package com.example.hamburger.repository
 
-import com.example.hamburgueria.controller.dto.AlimentoDto
-import com.example.hamburgueria.domain.Alimento
+import com.example.hamburger.controller.dto.AlimentoDto
+import com.example.hamburger.domain.Alimento
 import org.springframework.stereotype.Component
 
 @Component

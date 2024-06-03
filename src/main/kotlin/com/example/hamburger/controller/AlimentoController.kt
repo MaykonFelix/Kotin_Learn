@@ -1,8 +1,8 @@
-package com.example.hamburgueria.controller
+package com.example.hamburger.controller
 
-import com.example.hamburgueria.controller.dto.AlimentoDto
-import com.example.hamburgueria.domain.Alimento
-import com.example.hamburgueria.service.AlimentoService
+import com.example.hamburger.controller.dto.AlimentoDto
+import com.example.hamburger.domain.Alimento
+import com.example.hamburger.service.AlimentoService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping

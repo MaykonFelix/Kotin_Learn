@@ -1,6 +1,6 @@
-package com.example.hamburgueria.controller.dto
+package com.example.hamburger.controller.dto
 
-import com.example.hamburgueria.domain.Alimento
+import com.example.hamburger.domain.Alimento
 import java.math.BigDecimal
 
 class AlimentoDto(
