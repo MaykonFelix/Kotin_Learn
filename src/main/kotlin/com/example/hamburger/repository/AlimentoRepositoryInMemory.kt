@@ -2,6 +2,7 @@ package com.example.hamburger.repository
 
 import com.example.hamburger.controller.dto.AlimentoDto
 import com.example.hamburger.domain.Alimento
+import com.example.hamburger.exception.ElementoNaoEncontradoException
 import org.springframework.stereotype.Component
 
 @Component
@@ -25,11 +26,21 @@ class AlimentoRepositoryInMemory():AlimentoRepository {
     }
 
     override fun findByNome(pesquisa: String): Alimento {
-    return alimentoLista.first{it.nome == pesquisa}
+        try {
+            return alimentoLista.first{it.nome == pesquisa}
+
+        } catch (exception: NoSuchElementException){
+            throw RuntimeException("Não foi possível pesquisar por nome: $pesquisa")
+        }
     }
 
     override fun findById(id: Long): Alimento {
-        return alimentoLista.first{it.id == id}
+        try {
+            return alimentoLista.first{it.id == id}
+
+        } catch (exception: NoSuchElementException){
+            throw ElementoNaoEncontradoException("Não foi possível pesquisar por id: $id")
+        }
     }
 
     override fun delete(id: Long) {
