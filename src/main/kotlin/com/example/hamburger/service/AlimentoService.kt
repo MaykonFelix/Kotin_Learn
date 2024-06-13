@@ -18,7 +18,7 @@ class AlimentoService(
     }
 
     fun buscarComFiltro(pesquisa: String): Alimento {
-    val id = pesquisa.toLongOrNull()
+        val id = pesquisa.toLongOrNull()
         if(id == null){
             return alimentoRepository.findByNome(pesquisa)
         } else {

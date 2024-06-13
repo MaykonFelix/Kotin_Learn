@@ -1,5 +1,6 @@
 package com.example.hamburger.repository
 
+
 import com.example.hamburger.controller.dto.AlimentoDto
 import com.example.hamburger.domain.Alimento
 import com.example.hamburger.exception.ElementoNaoEncontradoException
@@ -22,7 +23,7 @@ class AlimentoRepositoryInMemory():AlimentoRepository {
     }
 
     override fun findAll(): List<Alimento> {
-      return alimentoLista
+        return alimentoLista
     }
 
     override fun findByNome(pesquisa: String): Alimento {

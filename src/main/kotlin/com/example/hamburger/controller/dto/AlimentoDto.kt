@@ -8,8 +8,8 @@ class AlimentoDto(
     val descricao: String,
     val preco: BigDecimal,
     val categoria: String
-){
-    fun paraDomain(): Alimento{
+) {
+    fun paraDomain(): Alimento {
         return Alimento(
             id = null,
             nome = nome,
@@ -17,7 +17,5 @@ class AlimentoDto(
             preco = preco,
             categoria = categoria
         )
-
     }
-
 }

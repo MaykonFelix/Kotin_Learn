@@ -1,5 +1,6 @@
 package com.example.hamburger.controller
 
+
 import com.example.hamburger.controller.dto.AlimentoDto
 import com.example.hamburger.domain.Alimento
 import com.example.hamburger.service.AlimentoService
@@ -19,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController
 class AlimentoController(
     private val alimentoService: AlimentoService
 ) {
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     fun salvar(@RequestBody alimentoDto: AlimentoDto): Alimento {
