@@ -4,6 +4,7 @@ package com.example.hamburger.controller
 import com.example.hamburger.controller.dto.AlimentoDto
 import com.example.hamburger.domain.Alimento
 import com.example.hamburger.service.AlimentoService
+import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
@@ -22,7 +23,7 @@ class AlimentoController(
 ) {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    fun salvar(@RequestBody alimentoDto: AlimentoDto): Alimento {
+    fun salvar(@Valid @RequestBody alimentoDto: AlimentoDto): Alimento {
         return alimentoService.save(alimentoDto)
     }
     @GetMapping
